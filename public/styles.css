@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    color: white;
+    background-color: #DB2777;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* #mainContainer{
+    display: flex;
+    padding: 5% 10%;
+    justify-content: space-between;
+} */
+
+/* .container, .container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.jobListing {
+    border: 1px solid lightslategray;
+    margin: 2em 0;
+    padding: 1em 0;
+} */
