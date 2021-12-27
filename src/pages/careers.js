@@ -114,7 +114,7 @@ export const DisplayAll = () => {
             "synergize transparent portals",
             "drive B2C networks"
           ],
-          "_id": "random-id-6",
+          "_id": ID,
           "title": title,
           "department": dept,
           "level": level,
@@ -126,23 +126,24 @@ export const DisplayAll = () => {
         setJobs(newJobs);
       };
 
+
     return <div>
-        <div class="mb-8">
+        <div className="mb-8">
           <div>
-            <h1 class="text-6xl mb-4 font-extrabold">Careers</h1>
+            <h1 className="text-6xl mb-4 font-extrabold">Careers</h1>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-3">
           <CareersForm id="hello" addJob={addListing}/>
           {/* <CareersList /> */}
             <div>
-            <ul class="md:flex-1 space-y-3">
+            <ul className="md:flex-1 space-y-3">
               {jobs && jobs.map((job) => (
-                              <li class="js-career-item">
-                              <div class="bg-white shadow overflow-hidden sm:rounded-md">
-                                <div class="px-4 py-4 flex items-center sm:px-6">
+                              <li className="js-career-item" key={ job._id }>
+                              <div className="bg-white shadow overflow-hidden sm:rounded-md">
+                                <div className="px-4 py-4 flex items-center sm:px-6">
                                   <div
-                                    class="
+                                    className="
                                       min-w-0
                                       flex-1
                                       sm:flex sm:items-center sm:justify-between
@@ -150,7 +151,7 @@ export const DisplayAll = () => {
                                   >
                                     <div>
                                       <div
-                                        class="
+                                        className="
                                           text-sm
                                           leading-5
                                           font-medium
@@ -159,13 +160,13 @@ export const DisplayAll = () => {
                                         "
                                       >
                                         { job.title }
-                                        <span class="ml-1 font-normal text-gray-500"
+                                        <span className="ml-1 font-normal text-gray-500"
                                           >in { job.department }
                                         </span>
                                       </div>
-                                      <div class="mt-2 flex">
+                                      <div className="mt-2 flex">
                                         <div
-                                          class="
+                                          className="
                                             flex
                                             items-center
                                             gap-2
@@ -178,12 +179,12 @@ export const DisplayAll = () => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
                                             fill="currentColor"
-                                            class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                            className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                           >
                                             <path
-                                              fill-rule="evenodd"
+                                              fillRule="evenodd"
                                               d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
-                                              clip-rule="evenodd"
+                                              clipRule="evenodd"
                                             ></path>
                                             <path
                                               d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
@@ -202,7 +203,7 @@ export const DisplayAll = () => {
                                     </div>
                                   </div>
                                   <div
-                                    class="
+                                    className="
                                       ml-5
                                       flex-shrink-0
                                       inline-flex
@@ -213,7 +214,7 @@ export const DisplayAll = () => {
                                   >
                                     <button
                                       type="button"
-                                      class="
+                                      className="
                                         js-delete-btn
                                         p-1
                                         rounded-full
@@ -236,15 +237,15 @@ export const DisplayAll = () => {
                                       }
                                     >
                                       <svg
-                                        class="w-5 h-5 text-gray-400"
+                                        className="w-5 h-5 text-gray-400"
                                         fill="currentColor"
                                         viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg"
                                       >
                                         <path
-                                          fill-rule="evenodd"
+                                          fillRule="evenodd"
                                           d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
-                                          clip-rule="evenodd"
+                                          clipRule="evenodd"
                                         ></path>
                                       </svg>
                                     </button>

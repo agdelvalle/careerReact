@@ -22,10 +22,10 @@ export const CareersForm = ({addJob}) => {
   
 
     return(<>
-        <div class="md:w-1/2">
+        <div className="md:w-1/2">
           <form id="career-form" onSubmit={handleSubmit}>
             <div
-              class="
+              className="
                 bg-white
                 overflow-hidden
                 shadow
@@ -33,13 +33,13 @@ export const CareersForm = ({addJob}) => {
                 divide-y divide-gray-200
               "
             >
-              <div class="px-4 py-5 sm:px-6 text-lg">Add Job Posting</div>
-              <div class="px-4 py-5 sm:p-6">
-                <div class="space-y-5">
-                  <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
+              <div className="px-4 py-5 sm:px-6 text-lg">Add Job Posting</div>
+              <div className="px-4 py-5 sm:p-6">
+                <div className="space-y-5">
+                  <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
                     <label
-                      for="job-title"
-                      class="
+                      htmlFor="job-title"
+                      className="
                         block
                         text-sm
                         font-medium
@@ -49,7 +49,7 @@ export const CareersForm = ({addJob}) => {
                     >
                       Job Title
                     </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <input
                         type="text"
                         name="job-title"
@@ -57,7 +57,7 @@ export const CareersForm = ({addJob}) => {
                         value ={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
-                        class="
+                        className="
                           block
                           w-full
                           shadow-sm
@@ -70,10 +70,10 @@ export const CareersForm = ({addJob}) => {
                     </div>
                   </div>
 
-                  <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
+                  <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
                     <label
-                      for="job-level"
-                      class="
+                      htmlFor="job-level"
+                      className="
                         block
                         text-sm
                         font-medium
@@ -83,14 +83,14 @@ export const CareersForm = ({addJob}) => {
                     >
                       Level
                     </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <select
                         id="job-level"
                         name="job-level"
                         value ={level}
                         onChange={(e) => setLevel(e.target.value)}
                         required
-                        class="
+                        className="
                           block
                           w-full
                           pl-3
@@ -113,10 +113,10 @@ export const CareersForm = ({addJob}) => {
                     </div>
                   </div>
 
-                  <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
+                  <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
                     <label
-                      for="job-department"
-                      class="
+                      htmlFor="job-department"
+                      className="
                         block
                         text-sm
                         font-medium
@@ -126,7 +126,7 @@ export const CareersForm = ({addJob}) => {
                     >
                       Department
                     </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <input
                         type="text"
                         name="job-department"
@@ -135,7 +135,7 @@ export const CareersForm = ({addJob}) => {
                         onChange={(e) => setDept(e.target.value)}
                         required
                         placeholder="e.g. Engineering"
-                        class="
+                        className="
                           block
                           w-full
                           shadow-sm
@@ -148,10 +148,10 @@ export const CareersForm = ({addJob}) => {
                     </div>
                   </div>
 
-                  <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
+                  <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
                     <label
-                      for="job-summary"
-                      class="
+                      htmlFor="job-summary"
+                      className="
                         block
                         text-sm
                         font-medium
@@ -161,7 +161,7 @@ export const CareersForm = ({addJob}) => {
                     >
                       Summary
                     </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
+                    <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <textarea
                         id="job-summary"
                         name="job-summary"
@@ -169,7 +169,7 @@ export const CareersForm = ({addJob}) => {
                         value={summary} 
                         onChange={(e) => setSummary(e.target.value)}
                         required
-                        class="
+                        className="
                           block
                           w-full
                           shadow-sm
@@ -182,10 +182,10 @@ export const CareersForm = ({addJob}) => {
                     </div>
                   </div>
 
-                  <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
+                  <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:items-start">
                     <label
-                      for="headcount"
-                      class="
+                      htmlFor="headcount"
+                      className="
                         block
                         text-sm
                         font-medium
@@ -195,11 +195,11 @@ export const CareersForm = ({addJob}) => {
                     >
                       Headcount
                     </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
-                      <div class="relative w-32">
+                    <div className="mt-1 sm:mt-0 sm:col-span-2">
+                      <div className="relative w-32">
                         <button
                           type="button"
-                          class="
+                          className="
                             absolute
                             left-0
                             inset-y-0
@@ -214,16 +214,16 @@ export const CareersForm = ({addJob}) => {
                           }
                         >
                           <svg
-                            class="w-6 h-6"
+                            className="w-6 h-6"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M20 12H4"
                             ></path>
                           </svg>
@@ -242,7 +242,7 @@ export const CareersForm = ({addJob}) => {
                             }
                           }}
                           required
-                          class="
+                          className="
                             block
                             w-full
                             px-9
@@ -254,11 +254,11 @@ export const CareersForm = ({addJob}) => {
                             rounded-md
                           "
                           placeholder="1"
-                          readonly
+                          readOnly
                         />
                         <button
                           type="button"
-                          class="
+                          className="
                             absolute
                             right-0
                             inset-y-0
@@ -275,16 +275,16 @@ export const CareersForm = ({addJob}) => {
                           }
                         >
                           <svg
-                            class="w-6 h-6"
+                            className="w-6 h-6"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                             ></path>
                           </svg>
@@ -297,15 +297,15 @@ export const CareersForm = ({addJob}) => {
                       )}
                       <div
                         id="headcount-error"
-                        class="text-red-500 text-xs pt-1 hidden"
+                        className="text-red-500 text-xs pt-1 hidden"
                       ></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="px-4 py-4 sm:px-6 text-right">
+              <div className="px-4 py-4 sm:px-6 text-right">
                 <button
-                  class="
+                  className="
                     inline-flex
                     justify-center
                     py-2

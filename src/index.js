@@ -8,8 +8,8 @@ import { DisplayAll } from "./pages/careers";
 ReactDOM.render(
     <div>
         {/* <HeaderBar /> */}
-        <main class="bg-gray-50">
-        <div class="max-w-6xl mx-auto px-3 py-12 space-y-6">
+        <main className="bg-gray-50">
+        <div className="max-w-6xl mx-auto px-3 py-12 space-y-6">
             <DisplayAll />
         </div>
         </main>

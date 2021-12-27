@@ -103,13 +103,13 @@ export const CareersList = (props) => {
 
     return <div>
         <div>
-            <ul class="md:flex-1 space-y-3">
+            <ul className="md:flex-1 space-y-3">
               {jobs && jobs.map((job) => (
-                              <li class="js-career-item">
-                              <div class="bg-white shadow overflow-hidden sm:rounded-md">
-                                <div class="px-4 py-4 flex items-center sm:px-6">
+                              <li className="js-career-item">
+                              <div className="bg-white shadow overflow-hidden sm:rounded-md">
+                                <div className="px-4 py-4 flex items-center sm:px-6">
                                   <div
-                                    class="
+                                    className="
                                       min-w-0
                                       flex-1
                                       sm:flex sm:items-center sm:justify-between
@@ -117,7 +117,7 @@ export const CareersList = (props) => {
                                   >
                                     <div>
                                       <div
-                                        class="
+                                        className="
                                           text-sm
                                           leading-5
                                           font-medium
@@ -126,13 +126,13 @@ export const CareersList = (props) => {
                                         "
                                       >
                                         { job.title }
-                                        <span class="ml-1 font-normal text-gray-500"
+                                        <span className="ml-1 font-normal text-gray-500"
                                           >in { job.department }
                                         </span>
                                       </div>
-                                      <div class="mt-2 flex">
+                                      <div className="mt-2 flex">
                                         <div
-                                          class="
+                                          className="
                                             flex
                                             items-center
                                             gap-2
@@ -145,7 +145,7 @@ export const CareersList = (props) => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
                                             fill="currentColor"
-                                            class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                            className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                                           >
                                             <path
                                               fill-rule="evenodd"
@@ -169,7 +169,7 @@ export const CareersList = (props) => {
                                     </div>
                                   </div>
                                   <div
-                                    class="
+                                    className="
                                       ml-5
                                       flex-shrink-0
                                       inline-flex
@@ -180,7 +180,7 @@ export const CareersList = (props) => {
                                   >
                                     <button
                                       type="button"
-                                      class="
+                                      className="
                                         js-delete-btn
                                         p-1
                                         rounded-full
@@ -197,7 +197,7 @@ export const CareersList = (props) => {
                                       title="Delete"
                                     >
                                       <svg
-                                        class="w-5 h-5 text-gray-400"
+                                        className="w-5 h-5 text-gray-400"
                                         fill="currentColor"
                                         viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg"
